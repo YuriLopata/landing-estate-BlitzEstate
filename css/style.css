@@ -368,6 +368,10 @@ html {
     box-sizing: inherit;
 }
 
+*:hover, *:active, *:focus, *:visited, *:checked, *:target {
+    border: none;
+}
+
 body {
     font-family: "Muller";
     font-style: normal;
@@ -752,3 +756,101 @@ main {
 }
 
 /* Test styles end */
+
+
+
+/* Services styles start */
+
+.services {
+    margin-bottom: 60px;
+}
+
+.services-title {
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-cards {
+    width: 100%;
+    height: 930px;
+    display: grid;
+    grid-template: repeat(3, 300px) / repeat(3, 1fr);
+    gap: 10px;
+}
+
+.services-card {
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.services-card:hover .services-card-info {
+    transform: translateY(-226px);
+}
+
+.services-card:active .services-card-info {
+    transform: translateY(-226px);
+}
+
+.services-card:focus .services-card-info {
+    transform: translateY(-226px);
+}
+
+/* .services-card:hover .services-card-pic {
+    background: rgba(0, 0, 0, 0.5);
+} */
+
+.services-card1 {
+    grid-row: span 2;
+}
+
+.services-card4 {
+    grid-column: span 2;
+}
+
+.services-card5 {
+    grid-column: span 2;
+}
+
+.services-card-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.services-card6-pic {
+    height: 100%;
+}
+
+.services-card-info {
+    transform: translateY(-48px);
+    /* padding: 252px 20px 0 20px; */
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.services-card-caption, .services-card-desc, .services-card-learnMore {
+    color: #fff;
+}
+
+.services-card-caption {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.services-card-desc {
+    margin-bottom: 20px;
+}
+
+.services-card-learnMore {
+    max-width: 333px;
+    padding: 17px 0;
+    text-align: center;
+    background: #2A94E2;
+    border-radius: 5px;
+}
+
+/* Services styles end */
