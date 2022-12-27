@@ -429,6 +429,7 @@ img {
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 body {
@@ -552,9 +553,7 @@ body {
 
 /* Header styles end */
 
-main {
-    padding: 0 15px;
-}
+
 
 /* Intro styles start */
 
@@ -1046,3 +1045,206 @@ main {
 }
 
 /* Aparts styles end */
+
+
+
+/* Company info styles start */
+
+.companyInfo {
+    background: #ececec;
+    margin-bottom: 60px;
+}
+
+.companyInfo-wrapper {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 65px 15px 0 15px;
+}
+
+.companyInfo-desc {
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.companyInfo-desc-title, .companyInfo-desc-about, .companyInfo-desc-services {
+    margin-bottom: 20px;
+}
+
+.companyInfo-desc-learnMore {
+    width: 270px;
+    padding: 20px 0;
+    color: #fff;
+    background: #2A94E2;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+}
+
+.companyInfo-desc-learnMore:hover, .companyInfo-desc-learnMore:active, .companyInfo-desc-learnMore:focus {
+    background: rgb(83, 189, 255);
+}
+
+.companyInfo-cards {
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0 15px;
+    margin-bottom: 65px;
+}
+
+.companyInfo-cards-largeCard {
+    grid-column: span 4;
+    max-height: 450px;
+}
+
+.companyInfo-card-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.companyInfo-card-pic-size-sm {
+    transition: all 0.3s ease;
+}
+
+.companyInfo-cards-smallCard:hover .companyInfo-card-pic-size-sm {
+   border: 2px solid #2A94E2;
+}
+
+.companyInfo-cards-smallCard:active .companyInfo-card-pic-size-sm {
+    border: 2px solid #2A94E2;
+}
+
+.companyInfo-cards-smallCard:focus .companyInfo-card-pic-size-sm {
+    border: 2px solid #2A94E2;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+ 
+/* Company info styles end */
+
+
+
+/* Directions styles start */
+
+.directions {
+    margin-bottom: 60px;
+}
+
+.directions-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.directions-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.directions-card {
+    position: relative;
+    padding: 35px 0 20px 35px;
+    border: 1px solid #2A94E2;
+    border-radius: 10px;
+}
+
+.directions-card::before {
+    width: 16px;
+    height: 279px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: url(../img/svg/directions-card-line-large.svg) no-repeat left 11px,
+                url(../img/svg/directions-card-line-medium.svg) no-repeat 6px 19px,
+                url(../img/svg/directions-card-line-small.svg) no-repeat 12px 26px;
+}
+
+.directions-card-title {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+    padding: 0 15px;
+    margin-bottom: 65px;
+}
+
+.directions-card-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.directions-card-info {
+    padding: 0 15px;
+    margin-right: auto;
+}
+
+.directions-card-manager {
+    font-size: 12px;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+.directions-card-name {
+    margin-bottom: 25px;
+}
+
+.directions-card-tel {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 41px;
+    color: #000;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.directions-card-tel:hover, .directions-card-tel:active, .directions-card-tel:focus {
+    color: #2A94E2;
+}
+
+.directions-card-email {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.directions-card-email:hover, .directions-card-email:active, .directions-card-email:focus {
+    color: #2A94E2;
+}
+
+.directions-card-thumb {
+    padding: 0 15px;
+    margin: 30px 35px 30px 0;
+}
+
+.directions-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.directions-link {
+    max-width: 320px;
+    color: #2A94E2;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.directions-link:hover, .directions-link:active, .directions-link:focus {
+    text-decoration: none;
+}
+
+.manager-wrapper {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 65px 15px 0 15px;
+}
+
+/* Directions styles end */
