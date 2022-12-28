@@ -424,7 +424,11 @@ img {
 
 /* Fonts end */
 
-
+.wrapper-full {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 .wrapper {
     max-width: 1170px;
@@ -513,7 +517,7 @@ body {
     line-height: 26px;
 }
 
-.header-phone {
+.header-contact {
     width: 272px;
     display: flex;
     flex-direction: column;
@@ -521,22 +525,22 @@ body {
     transform: translateY(23px);
 }
 
-.header-phone-tel {
+.header-contact-tel {
     padding-bottom: 20px;
 }
 
-.header-phone-tel-link {
+.header-contact-tel-link {
     font-size: 30px;
     text-decoration: none;
     color: #000;
     transition: all 0.3s ease;
 }
 
-.header-phone-tel-link:hover, .header-phone-tel-link:active, .header-phone-tel-link:focus {
+.header-contact-tel-link:hover, .header-contact-tel-link:active, .header-contact-tel-link:focus {
     color: #2A94E2;
 }
 
-.header-phone-orderCall {
+.header-contact-orderCall {
     font-size: 16px;
     line-height: 24px;
     border: 1px solid #2A94E2;
@@ -547,7 +551,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.header-phone-orderCall:hover, .header-phone-orderCall:active, .header-phone-orderCall:focus {
+.header-contact-orderCall:hover, .header-contact-orderCall:active, .header-contact-orderCall:focus {
     background: rgba(139, 208, 251, 0.5);
 } 
 
@@ -1056,12 +1060,10 @@ body {
 }
 
 .companyInfo-wrapper {
-    max-width: 1170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 65px 15px 0 15px;
+    padding-top: 65px;
 }
 
 .companyInfo-desc {
@@ -1228,23 +1230,186 @@ body {
 }
 
 .directions-link {
-    max-width: 320px;
+    max-width: 330px;
     color: #2A94E2;
     font-size: 22px;
     line-height: 36px;
+    padding-right: 15px;
+    transition: all 0.3s ease;
 }
 
 .directions-link:hover, .directions-link:active, .directions-link:focus {
     text-decoration: none;
 }
 
-.manager-wrapper {
-    max-width: 1170px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 65px 15px 0 15px;
+/* Directions styles end */
+
+
+
+/* Manager styles start */
+
+.manager { 
+    background: #EEF3FA;
 }
 
-/* Directions styles end */
+.manager-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+
+.manager-person {
+    max-width: 664px;
+}
+
+.manager-title {
+    max-width: 485px;
+    margin-bottom: 25px;
+}
+
+.manager-person-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.manager-person-desc {
+    margin-bottom: 25px;
+}
+
+.manager-person-askQuestion {
+    color: #fff;
+    background: #2A94E2;
+    border-radius: 5px;
+    padding: 20px 79px;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+}
+
+.manager-person-askQuestion:hover, .manager-person-askQuestion:active, .manager-person-askQuestion:focus {
+    background: rgb(83, 189, 255);
+}
+
+.manager-pic {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Manager styles end */
+
+
+
+/* Footer styles start */
+
+.footer {
+    color: #fff;
+    background: #535860;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.footer-info {
+    max-width: 322px;
+    margin-bottom: 40px;
+}
+
+.footer-info-workTime {
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.footer-info-workTime-object {
+    margin-bottom: 10px;
+}
+
+.footer-info-address {
+    margin-bottom: 20px;
+}
+
+.footer-info-taxData {
+    width: 298px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo-pic {
+    max-width: 141px;
+    max-height: 110px;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+.footer-logo-title {
+    max-width: 195px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-contact-tel {
+    color: #fff;
+    font-size: 30px;
+    line-height: 49px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-contact-tel:hover, .footer-contact-tel:active, .footer-contact-tel:focus {
+    color: #2A94E2;
+}
+
+.footer-contact-email {
+    width: fit-content;
+    font-size: 22px;
+    line-height: 36px;
+    color: #fff;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.footer-contact-email:hover, .footer-contact-email:active, .footer-contact-email:focus {
+    color: #2A94E2;
+}
+
+.footer-contact-orderCall {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 14.5px 69px;
+    background: #fff;
+    white-space: nowrap;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.footer-contact-orderCall:hover, .footer-contact-orderCall:active, .footer-contact-orderCall:focus {
+    color: #fff;
+    background: rgb(83, 189, 255);
+} 
+
+/* Footer styles end */
