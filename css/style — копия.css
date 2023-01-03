@@ -373,14 +373,27 @@ html {
 }
 
 body {
+    /* min-height: 100vh;
     background: url(../img/intro-bg.jpg) no-repeat top;
-    /* background-size: cover; */
+    background-size: cover; */
+    position: relative;
     font-family: "Muller";
     font-style: normal;
     font-size: 16px;
     line-height: 26px;
     font-weight: normal;
     color: #000;
+}
+
+body::after {
+    /* min-height: 100vh; */
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/intro-bg.jpg) no-repeat top;
+    background-size: cover;
 }
 
 img {
@@ -614,7 +627,7 @@ img {
     margin-bottom: 40px;
 }
 
-.intro-passTest-pic {
+.intro-passTest-thumb {
     margin-right: 20px;
 }
 
@@ -912,7 +925,7 @@ img {
 
 .aparts-categories-item {
     width: 20%;
-    padding: 20px 5px;
+    padding: 20px 0;
     background: #fff;
     border-right: 2px solid #ececec;
     transition: all 0.3s ease;
@@ -1085,6 +1098,7 @@ img {
 
 .companyInfo-desc {
     max-width: 50%;
+    padding: 0 15px;
 }
 
 .companyInfo-desc-title, .companyInfo-desc-about, .companyInfo-desc-services {
@@ -1110,6 +1124,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    padding: 0 15px;
     margin-bottom: 65px;
 }
 
@@ -1440,27 +1455,32 @@ img {
 /* Footer styles end */
 
 @media screen and (max-width: 1367px) {
-    .services-card {
-        position: relative;
-    }
-    
-    .services-card-info {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transform: translateY(0);
+    .services-card3-info {
+        transform: translateY(-82px);
     }
 
     .services-card:hover .services-card-info {
-        transform: translateY(0);
+        transform: translateY(-48px);
     }
 
     .services-card:active .services-card-info {
-        transform: translateY(0);
+        transform: translateY(-48px);
     }
 
     .services-card:focus .services-card-info {
-        transform: translateY(0);
+        transform: translateY(-48px);
+    }
+
+    .services-card:hover .services-card3-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:active .services-card3-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:focus .services-card3-info {
+        transform: translateY(-82px);
     }
 
     .services-card-desc, .services-card-learnMore {
@@ -1472,31 +1492,13 @@ img {
     }
 }
 
-@media screen and (max-width: 1032px) {
-    .manager-pic {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 769px) {
-    .header {
-        padding-top: 15px;
-    }
-    
-    .header-logo-title {
-        display: none;
-    }
-    
+@media screen and (max-width: 768px) {
     .header-contact {
         margin-bottom: 30px;
     }
 
-    .intro {
-        margin-bottom: 70px;
-    }
-
     .intro-info {
-        margin-bottom: 35px;
+        margin-bottom: 100px;
     }
     
     .intro-passTest {
@@ -1525,12 +1527,72 @@ img {
         gap: 10px;
     }
 
+    .services-card:hover .services-card-info {
+        transform: translateY(-48px);
+    }
+    
+    .services-card:active .services-card-info {
+        transform: translateY(-48px);
+    }
+    
+    .services-card:focus .services-card-info {
+        transform: translateY(-48px);
+    }
+
+    .services-card1-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:hover .services-card1-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:active .services-card1-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:focus .services-card1-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card2-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:hover .services-card2-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:active .services-card2-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:focus .services-card2-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:hover .services-card3-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:active .services-card3-info {
+        transform: translateY(-82px);
+    }
+
+    .services-card:focus .services-card3-info {
+        transform: translateY(-82px);
+    }
+
     .companyInfo-wrapper {
         flex-direction: column;
     }
 
     .companyInfo-desc {
         max-width: 100%;
+    }
+
+    .companyInfo-desc-about, .companyInfo-desc-services {
+        text-align: justify;
     }
 
     .companyInfo-desc-learnMore {
@@ -1543,6 +1605,10 @@ img {
     
     .manager-person {
         max-width: 100%;
+    }
+
+    .manager-pic {
+        display: none;
     }
 
     .footer-wrapper {
@@ -1583,6 +1649,10 @@ img {
         width: 100px;
         margin-right: 0;
         padding-right: 0;
+    }
+    
+    .header-logo-title {
+        display: none;
     }
 
     .header-contact-tel {
@@ -1625,7 +1695,7 @@ img {
     }
 
     .test-subtitle {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     .test-questions {
@@ -1667,6 +1737,7 @@ img {
 
     .test-note {
         max-width: 100%;
+        text-align: justify;
     }
 
     .services-cards {
@@ -1674,7 +1745,20 @@ img {
     }
 
     .services-card-info {
+        transform: translateY(-26px);
         margin: 0 10px;
+    }
+
+    .services-card1-info {
+        transform: translateY(-45px);
+    }
+
+    .services-card2-info {
+        transform: translateY(-45px);
+    }
+
+    .services-card3-info {
+        transform: translateY(-45px);
     }
 
     .services-card-caption {
@@ -1727,6 +1811,7 @@ img {
     .directions-link {
         max-width: 100%;
         grid-column: span 3;
+        text-align: justify;
         font-size: 18px;
         line-height: 22px;
     }
@@ -1770,278 +1855,9 @@ img {
     }
 }
 
-@media screen and (max-width: 415px) {
-    .section-title-fontStyle {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .section-subtitle-fontStyle {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    
+@media screen and (max-width: 228px) {
     .header-contact {
-        margin: 10px auto 15px auto;
+        margin: 0 auto 15px auto;
         transform: translateY(0);
-    }
-
-    .info-number {
-        font-size: 46px;
-        line-height: 36px;
-        margin-right: 10px;
-    }
-
-    .info-text {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .intro {
-        margin-bottom: 60px;
-    }
-
-    .intro-subtitle {
-        margin-bottom: 30px;
-    }
-
-    .intro-passTest-pic {
-        margin-right: 10px;
-    }
-
-    .intro-passTest-text {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .test-subtitle {
-        margin-bottom: 70px;
-    }
-
-    .test-question-title {
-        font-size: 18px;
-        line-height: 20px;
-    }
-
-    .test-note {
-        font-size: 12px;
-        line-height: 14px;
-    }
-
-    .services-cards {
-        grid-template-rows: repeat(3, 100px);
-        gap: 5px;
-    }
-
-    .services-card-info {
-        margin: 0 5px;
-    }
-
-    .services-card-caption {
-        font-size: 10px;
-        line-height: 12px;
-        margin-bottom: 5px;
-    }
-
-    .aparts-subtitle {
-        margin-bottom: 20px;
-    }
-
-    .aparts-categories {
-        margin-bottom: 15px;
-    }
-
-    .aparts-categories-item {
-        font-size: 12px;
-        line-height: 16px;
-        padding: 10px 0;
-    }
-    
-    .directions-card-content {
-        justify-content: center;
-    }
-
-    .directions-card-thumb {
-        height: 70px;
-        padding: 0 15px;
-    }
-
-    .footer-logo {
-        margin-bottom: 20px;
-    }
-
-    .footer-contact {
-        justify-content: center;
-    }
-
-    .footer-contact-tel {
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 321px) {
-    .intro-title {
-        font-size: 28px;
-        line-height: 32px;        
-    }
-
-    .intro-info {
-        margin-bottom: 15px;
-    }
-
-    .intro-selectEstate {
-        padding: 10px 20px;
-    }
-
-    .test-question {
-        padding: 15px;
-    }
-
-    .test-question-choise {
-        margin-bottom: 15px;
-    }
-
-    .test-question-footer-line {
-        margin-bottom: 15px;
-    }
-
-    .test-notes {
-        padding: 20px;        
-    }
-    
-    .test-note {
-        margin-bottom: 20px;        
-    }
-    
-    .services {
-        margin-bottom: 30px;
-    }
-
-    .services-cards {
-        grid-template-rows: repeat(3, 80px);
-    }
-
-    .services-card-caption {
-        font-weight: 500;
-    }
-
-    .aparts {
-        margin-bottom: 40px;
-    }
-
-    .aparts-categories-item {
-        font-size: 10px;
-        line-height: 16px;
-        padding: 5px 0;
-    }
-
-    .aparts-cards {
-        margin-bottom: 20px;
-    }
-
-    .aparts-card-pic {
-        margin-bottom: 15px;
-    }
-
-    .aparts-card-picCaption {
-        font-size: 18px;
-        line-height: 22px;        
-    }
-
-    .aparts-card-lot {
-        font-size: 14px;
-        line-height: 16px;
-        margin-bottom: 10px;
-    }
-
-    .aparts-card-price {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-    .aparts-card-area {
-        font-size: 14px;
-        line-height: 18px;
-        margin: 10px 0 5px 0;
-    }
-
-    .aparts-card-floor {
-        font-size: 14px;
-        line-height: 18px;
-    }
-
-    .directions-title {
-        margin-bottom: 20px;
-    }
-
-    .directions-cards {
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-    
-    .directions-card {
-        padding: 15px 0 0 25px;
-    }
-
-    .directions-card-title {
-        font-size: 14px;
-        line-height: 16px;
-        margin-bottom: 15px;
-    }
-
-    .directions-card-name {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 15px;
-    }
-
-    .directions-card-tel {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-
-    .directions-card-info {
-        margin-bottom: 10px;
-    }
-
-    .directions-card-thumb {
-        margin: 0 35px 15px 0;
-    }
-
-    .directions-link {
-        font-size: 16px;
-        line-height: 20px;
-        margin: 0 0 5px 30px;
-    }
-
-    .manager-title {
-        margin-bottom: 15px;
-    }
-
-    .manager-person-name {
-        font-size: 16px;
-        line-height: 22px;
-        margin-bottom: 10px;
-    }
-
-    .manager-person-desc {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 15px;
-    }
-
-    .manager-person-askQuestion {
-        padding: 10px 0;
-    }
-
-    .footer-contact-tel {
-        font-size: 18px;
-        line-height: 22px;
-    }
-
-    .footer-contact-email {
-      font-size: 18px;
-      line-height: 22px;  
     }
 }
