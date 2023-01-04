@@ -1085,6 +1085,7 @@ img {
 
 .companyInfo-desc {
     max-width: 50%;
+    margin-right: 30px;
 }
 
 .companyInfo-desc-title, .companyInfo-desc-about, .companyInfo-desc-services {
@@ -1695,6 +1696,10 @@ img {
         padding-top: 30px;
     }
 
+    .companyInfo-desc {
+        margin-right: 0;
+    }
+
     .companyInfo-desc-learnMore {
         width: 100%;
     }
@@ -1712,6 +1717,7 @@ img {
     }
     
     .directions-cards {
+        gap: 17px;
         margin-bottom: 40px;
     }
 
@@ -1870,6 +1876,10 @@ img {
         margin-bottom: 20px;
     }
 
+    .footer-logo-title {
+        display: block;
+    }
+
     .footer-contact {
         justify-content: center;
     }
@@ -1882,7 +1892,7 @@ img {
 @media screen and (max-width: 321px) {
     .intro-title {
         font-size: 28px;
-        line-height: 32px;        
+        line-height: 32px;
     }
 
     .intro-info {
@@ -1906,11 +1916,11 @@ img {
     }
 
     .test-notes {
-        padding: 20px;        
+        padding: 20px;
     }
     
     .test-note {
-        margin-bottom: 20px;        
+        margin-bottom: 20px;
     }
     
     .services {
@@ -2033,6 +2043,15 @@ img {
 
     .manager-person-askQuestion {
         padding: 10px 0;
+    }
+
+    .footer-logo-pic {
+        margin-right: 15px;
+    }
+
+    .footer-logo-title {
+        font-size: 14px;
+        line-height: 16px;
     }
 
     .footer-contact-tel {
