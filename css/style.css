@@ -1634,6 +1634,7 @@ img {
     
     .intro-selectEstate {
         width: 100%;
+        padding: 25px;
     }
 
     .test {
@@ -1912,10 +1913,6 @@ img {
 
     .intro-info {
         margin-bottom: 15px;
-    }
-
-    .intro-selectEstate {
-        padding: 10px 20px;
     }
 
     .test-question {
