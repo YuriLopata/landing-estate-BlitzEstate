@@ -373,7 +373,7 @@ html {
 }
 
 body {
-    background: url(../img/intro-bg.jpg) no-repeat top;
+    background: url(../img/intro-bg-min.jpg) no-repeat top;
     /* background-size: cover; */
     font-family: "Muller";
     font-style: normal;
@@ -407,6 +407,7 @@ img {
     font-family: "Muller";
     font-weight: 400;
     font-style: normal;
+    font-display: fallback;
     src: url(../fonts/2DF5B4_F_0.woff2) format("woff2"),url(../fonts/2DF5B4_F_0.woff) format("woff")
   }
   
@@ -414,6 +415,7 @@ img {
     font-family: "Muller";
     font-weight: 500;
     font-style: normal;
+    font-display: fallback;
     src: url(../fonts/2DF5B4_D_0.woff2) format("woff2"),url(../fonts/2DF5B4_D_0.woff) format("woff")
   }
 
@@ -421,6 +423,7 @@ img {
     font-family: "Muller";
     font-weight: 700;
     font-style: normal;
+    font-display: fallback;
     src: url(../fonts/2DF5B4_2_0.woff2) format("woff2"),url(../fonts/2DF5B4_2_0.woff) format("woff")
 }
 
@@ -460,7 +463,14 @@ img {
     align-items: center;
     background: transparent;
     padding-right: 15px;
+    color: #000;
+    text-decoration: none;
     margin: 20px auto 20px 0;
+    transition: all 0.3s ease;
+}
+
+.header-burger:hover, .header-burger:active, .header-burger:focus {
+    color: #2A94E2;
 }
 
 .header-burger-thumb {  
@@ -690,6 +700,8 @@ img {
 }
 
 .test-question-choise {
+    color: #000;
+    text-decoration: none;
     background-color: #fff;
     margin-right: 30px;
     transition: all 0.3s ease;
@@ -708,6 +720,7 @@ img {
 }
 
 .test-question-choise-caption {
+    text-align: center;
     font-weight: 700;
     opacity: 0.5;
 }
@@ -1042,12 +1055,15 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
+    background: #ececec;
+    color: #000;
+    text-decoration: none;
     padding: 21px 0;
     transition: all 0.3s ease;
 }
 
 .aparts-showMore:focus .aparts-showMore-arrow {
-    transform: rotate(-180deg) translateY(-7px);
+    transform: rotate(-180deg);
 }
 
 .aparts-showMore:hover, .aparts-showMore:active, .aparts-showMore:focus {
@@ -1061,7 +1077,6 @@ img {
 }
 
 .aparts-showMore-arrow {
-    transform: translateY(7px);
     transition: all 0.3s ease;
 }
 
