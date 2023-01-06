@@ -935,11 +935,11 @@ img {
     border-right: none;
 }
 
-.aparts-categories-item:hover, .aparts-categories-item:active {
+.aparts-categories-item:hover {
     background: #ececec;
 }
 
-.aparts-categories-item:focus {
+.aparts-categories-item:active, .aparts-categories-item:focus {
     background: #2A94E2;
     color: #fff;
 }
